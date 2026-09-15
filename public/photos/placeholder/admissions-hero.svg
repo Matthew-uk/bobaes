@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" role="img" aria-label="Parent &amp; child">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2EAE0"/>
+      <stop offset="100%" stop-color="#DFCDB8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#g)"/>
+  <rect x="0" y="816.0000000000001" width="1800" height="384" fill="#DFCDB8" opacity="0.55"/>
+  <circle cx="612" cy="624" r="102.00000000000001" fill="#0F2B5B" opacity="0.14"/>
+  <rect x="492" y="720" width="240" height="312" rx="96" fill="#0F2B5B" opacity="0.14"/>
+  <circle cx="1044" cy="683.9999999999999" r="78" fill="#0F2B5B" opacity="0.1"/>
+  <rect x="950.4" y="756" width="187.2" height="276" rx="74.4" fill="#0F2B5B" opacity="0.1"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#0F2B5B" text-anchor="middle">
+    <text x="900" y="240" font-size="66" font-weight="700" opacity="0.62">Parent &amp; child</text>
+    <text x="900" y="309" font-size="46" opacity="0.42" font-family="system-ui, sans-serif">photo placeholder &#183; 1800&#215;1200</text>
+  </g>
+  <rect x="24" y="24" width="1752" height="1152" fill="none" stroke="#0F2B5B" stroke-opacity="0.18" stroke-width="4.8" stroke-dasharray="36 24"/>
+</svg>

@@ -1,26 +1,183 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ---------------------------------------------------------------------------
+   BOBAES Edu-Excellence Schools — brand tokens
+   Sampled from the school crest (public/bobaes-img/logo.png): royal blue field,
+   crimson quadrant and ribbon. Paper echoes the cream uniform shirts.
+   --------------------------------------------------------------------------- */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: #1f3a73;
+  --color-navy-deep: #13264f;
+  --color-navy-soft: #2c4f96;
+  --color-navy-tint: #e9edf5;
+
+  --color-red: #a8191f;
+  --color-red-deep: #86131a;
+  --color-red-tint: #f7e6e4;
+
+  --color-paper: #faf6ee;
+  --color-sand: #f1e9dc;
+  --color-ink: #1c1b19;
+  --color-ink-soft: #4d4a45;
+
+  --color-background: var(--color-paper);
+  --color-foreground: var(--color-ink);
+
+  --font-sans: var(--font-nunito-sans);
+  --font-display: var(--font-fraunces);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--color-navy);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Visible focus for keyboard users on every interactive element. */
+  :focus-visible {
+    outline: 3px solid var(--color-red);
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Fluid editorial type scale. */
+  .t-display {
+    font-family: var(--font-display);
+    font-size: clamp(2.25rem, 1.65rem + 2.7vw, 3.875rem);
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+  }
+
+  .t-h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 1.5rem + 2.4vw, 3.375rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.018em;
+  }
+
+  .t-h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 1.3rem + 1.9vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -0.012em;
+  }
+
+  .t-h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .t-lead {
+    font-size: clamp(1.0625rem, 1rem + 0.4vw, 1.3125rem);
+    line-height: 1.65;
+    color: var(--color-ink-soft);
+  }
+
+  .t-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  /* Page gutter, used on every content wrapper. */
+  .wrap {
+    width: 100%;
+    max-width: 76rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .wrap {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  .wrap-narrow {
+    width: 100%;
+    max-width: 48rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .wrap-narrow {
+      padding-inline: 2.5rem;
+    }
+  }
+}
+
+@layer utilities {
+  /* Shared warm grade so mixed-source photography reads as one set. */
+  .photo-grade {
+    filter: saturate(1.02) contrast(1.02) sepia(0.03);
+  }
+
+  /* Scroll reveal — see components/Reveal.tsx */
+  .reveal {
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+      opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal[data-shown="true"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Anyone who has asked for less motion gets none of it. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050" role="img" aria-label="Computer laboratory">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBE9EC"/>
+      <stop offset="100%" stop-color="#EFC9D0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1050" fill="url(#g)"/>
+  <rect x="0" y="714" width="1400" height="336" fill="#EFC9D0" opacity="0.55"/>
+  <circle cx="476.00000000000006" cy="546" r="89.25" fill="#A00D25" opacity="0.14"/>
+  <rect x="371.00000000000006" y="630" width="210" height="273" rx="84" fill="#A00D25" opacity="0.14"/>
+  <circle cx="812" cy="598.5" r="68.25" fill="#A00D25" opacity="0.1"/>
+  <rect x="730.1" y="661.5" width="163.8" height="241.5" rx="65.1" fill="#A00D25" opacity="0.1"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#A00D25" text-anchor="middle">
+    <text x="700" y="210" font-size="58" font-weight="700" opacity="0.62">Computer laboratory</text>
+    <text x="700" y="270" font-size="40" opacity="0.42" font-family="system-ui, sans-serif">photo placeholder &#183; 1400&#215;1050</text>
+  </g>
+  <rect x="21" y="21" width="1358" height="1008" fill="none" stroke="#A00D25" stroke-opacity="0.18" stroke-width="4.2" stroke-dasharray="31.5 21"/>
+</svg>

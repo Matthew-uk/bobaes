@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Head of School">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2EAE0"/>
+      <stop offset="100%" stop-color="#DFCDB8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <rect x="0" y="680" width="800" height="320" fill="#DFCDB8" opacity="0.55"/>
+  <circle cx="272" cy="520" r="68" fill="#0F2B5B" opacity="0.14"/>
+  <rect x="192" y="600" width="160" height="260" rx="64" fill="#0F2B5B" opacity="0.14"/>
+  <circle cx="463.99999999999994" cy="570" r="52" fill="#0F2B5B" opacity="0.1"/>
+  <rect x="401.59999999999997" y="630" width="124.8" height="230" rx="49.6" fill="#0F2B5B" opacity="0.1"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#0F2B5B" text-anchor="middle">
+    <text x="400" y="200" font-size="44" font-weight="700" opacity="0.62">Head of School</text>
+    <text x="400" y="245" font-size="30" opacity="0.42" font-family="system-ui, sans-serif">photo placeholder &#183; 800&#215;1000</text>
+  </g>
+  <rect x="16" y="16" width="768" height="968" fill="none" stroke="#0F2B5B" stroke-opacity="0.18" stroke-width="3.2" stroke-dasharray="24 16"/>
+</svg>

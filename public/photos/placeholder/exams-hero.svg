@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Examination preparation">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E3E9F2"/>
+      <stop offset="100%" stop-color="#BCC9DE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#g)"/>
+  <rect x="0" y="725.5600000000001" width="1600" height="341.44" fill="#BCC9DE" opacity="0.55"/>
+  <circle cx="544" cy="554.84" r="90.69500000000001" fill="#081A3A" opacity="0.14"/>
+  <rect x="437.3" y="640.1999999999999" width="213.4" height="277.42" rx="85.36" fill="#081A3A" opacity="0.14"/>
+  <circle cx="927.9999999999999" cy="608.1899999999999" r="69.355" fill="#081A3A" opacity="0.1"/>
+  <rect x="844.7739999999999" y="672.21" width="166.452" height="245.41" rx="66.154" fill="#081A3A" opacity="0.1"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#081A3A" text-anchor="middle">
+    <text x="800" y="213.4" font-size="59" font-weight="700" opacity="0.62">Examination preparation</text>
+    <text x="800" y="274.9" font-size="41" opacity="0.42" font-family="system-ui, sans-serif">photo placeholder &#183; 1600&#215;1067</text>
+  </g>
+  <rect x="21.34" y="21.34" width="1557.32" height="1024.32" fill="none" stroke="#081A3A" stroke-opacity="0.18" stroke-width="4.268" stroke-dasharray="32.01 21.34"/>
+</svg>
