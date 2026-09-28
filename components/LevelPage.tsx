@@ -20,7 +20,7 @@ export default function LevelPage({ level }: { level: Level }) {
         eyebrow={`Academics · ${level.ages}`}
         title={level.name}
         lead={level.teaser}
-        media={level.mediaKey as MediaKey}
+        media={level.mediaKey ?? undefined}
       />
 
       <Section tone="paper">
@@ -44,15 +44,17 @@ export default function LevelPage({ level }: { level: Level }) {
             </ol>
           </Reveal>
 
-          <Reveal delay={80}>
-            <div className="relative aspect-3/4 w-full overflow-hidden rounded-md lg:sticky lg:top-32">
-              <Photo
-                media={level.mediaKey as MediaKey}
-                fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
-              />
-            </div>
-          </Reveal>
+          {level.mediaKey ? (
+            <Reveal delay={80}>
+              <div className="relative aspect-3/4 w-full overflow-hidden rounded-md lg:sticky lg:top-32">
+                <Photo
+                  media={level.mediaKey as MediaKey}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+              </div>
+            </Reveal>
+          ) : null}
         </div>
       </Section>
 

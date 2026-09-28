@@ -3,7 +3,6 @@ import CtaBand from "@/components/CtaBand";
 import Reveal from "@/components/Reveal";
 import {
   ButtonLink,
-  DraftNote,
   PageHero,
   Section,
   SectionHeading,
@@ -18,41 +17,33 @@ export const metadata: Metadata = {
   alternates: { canonical: "/admissions/how-to-apply" },
 };
 
-/** ⚠️ DRAFT — confirm the real process with the school office before launch. */
 const STEPS = [
   {
-    title: "Get in touch",
-    body: "Send an enquiry, call, or message us on WhatsApp. Tell us your child's age and the level you are considering. Someone from the school will call you back, usually the same day.",
+    title: "Submit the filled form",
+    body: "Submit the completed admission form with two recent passport photographs.",
   },
   {
-    title: "Visit the school",
-    body: "Come and see the campus during a school day. You will meet the head of the relevant section, see the classrooms your child would be in, and ask whatever you need to ask.",
+    title: "Attach the required documents",
+    body: "Attach a photocopy of the child's Birth Certificate and Health Form.",
   },
   {
-    title: "Complete the application form",
-    body: "Collect a form from the school office, or ask us to send one. You will need your child's birth certificate, recent passport photographs, and — for a transfer — the last report card from their current school.",
+    title: "Take the placement test",
+    body: "The child sits for a written class-placement test Monday to Friday, between 8:00am and 4:00pm. Children going into Pre-Nursery are exempt.",
   },
   {
-    title: "Entrance assessment",
-    body: "From Primary upward, children sit a short, age-appropriate assessment so we can place them in the right class. It is not a test to pass or fail; it tells us where to start.",
+    title: "Receive the admission documents",
+    body: "The admission letter and other documents will be issued after the test result is available.",
   },
   {
-    title: "Offer and acceptance",
-    body: "We confirm the place, the level, and the fees for the term. Once the admission fee and first term's fees are settled, the place is held.",
-  },
-  {
-    title: "Preparing for the first day",
-    body: "Uniform list, book list, term dates and drop-off arrangements. We will walk you through all of it — nobody should arrive on day one guessing.",
+    title: "Pay the school fees",
+    body: "Pay the school fees into the designated bank account through the school account section. Refer to the school fees bill for the account and payment details.",
   },
 ];
 
 const REQUIREMENTS = [
-  "Your child's birth certificate or age declaration",
+  "A photocopy of your child's Birth Certificate",
   "Two recent passport photographs",
-  "The last report card or transcript, for transferring pupils",
-  "A transfer certificate from the previous school, where applicable",
-  "Immunisation record, for creche and pre-nursery",
-  "A parent or guardian's phone number and address",
+  "A photocopy of the child's Health Form",
 ];
 
 export default function HowToApplyPage() {
@@ -61,8 +52,7 @@ export default function HowToApplyPage() {
       <PageHero
         eyebrow="Admissions"
         title="How to apply"
-        lead="Six steps, and we walk you through every one of them. Start whenever you are ready — we take applications all year round."
-        media="levelSecondary"
+        lead="Five steps from the completed form to payment. Admissions are ongoing, so start whenever you are ready."
       />
 
       <Section tone="paper">
@@ -71,11 +61,6 @@ export default function HowToApplyPage() {
           title="From first call to first day"
         />
         <StepList steps={STEPS} />
-        <DraftNote>
-          This process was drafted for the build. Confirm the real steps,
-          assessment arrangements and required documents with the school office,
-          then update this page and the list below.
-        </DraftNote>
       </Section>
 
       <Section tone="sand">

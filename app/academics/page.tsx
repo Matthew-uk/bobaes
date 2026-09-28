@@ -18,7 +18,7 @@ import type { MediaKey } from "@/content/media";
 export const metadata: Metadata = {
   title: "Academics",
   description:
-    "Our teaching philosophy — metacognition, brain science and multiple intelligences — and the levels we teach, from Creche through Secondary and the SSCE.",
+    "Our teaching philosophy — metacognition, brain science and multiple intelligences — and the levels we teach, from Creche through JSS 3.",
   alternates: { canonical: "/academics" },
 };
 
@@ -53,7 +53,7 @@ export default function AcademicsPage() {
       {/* ------------------------- Levels index --------------------------- */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="From 3 months to 17 years"
+          eyebrow="From 3 months to JSS 3"
           title="The levels we teach"
         />
 
@@ -64,13 +64,15 @@ export default function AcademicsPage() {
                 href={`/academics/${level.slug}` as Route}
                 className="group grid gap-5 border-b border-navy/15 py-7 sm:grid-cols-[minmax(0,14rem)_1fr] sm:items-center sm:gap-8 lg:grid-cols-[minmax(0,18rem)_1fr_auto]"
               >
-                <div className="relative aspect-3/2 w-full overflow-hidden rounded-md bg-sand">
-                  <Photo
-                    media={level.mediaKey as MediaKey}
-                    fill
-                    sizes="(max-width: 640px) 100vw, 18rem"
-                  />
-                </div>
+                {level.mediaKey ? (
+                  <div className="relative aspect-3/2 w-full overflow-hidden rounded-md bg-sand">
+                    <Photo
+                      media={level.mediaKey as MediaKey}
+                      fill
+                      sizes="(max-width: 640px) 100vw, 18rem"
+                    />
+                  </div>
+                ) : null}
                 <div>
                   <p className="t-eyebrow text-red">{level.ages}</p>
                   <h3 className="t-h3 mt-2 text-navy transition-colors group-hover:text-red">
@@ -113,8 +115,8 @@ export default function AcademicsPage() {
             <SectionHeading
               tone="light"
               eyebrow="Examinations"
-              title="WAEC, NECO and CBT"
-              lead="Our secondary school takes candidates through to the Senior Secondary Certificate Examinations, and handles registration with families rather than around them."
+              title="State BECE, NECO BECE and exam guidance"
+              lead="Our examination guidance covers State BECE, NECO BECE and other relevant examinations, with registration handled alongside families."
             />
             <div className="mt-8">
               <ButtonLink

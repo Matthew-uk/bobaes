@@ -13,20 +13,20 @@ import { EXAM_BODIES, EXAM_STEPS } from "@/content/academics";
 import { SCHOOL, whatsappLink } from "@/content/school";
 
 export const metadata: Metadata = {
-  title: "WAEC, NECO & CBT Registration",
+  title: "BECE, WAEC, NECO & CBT Registration",
   description:
-    "How examination registration works at BOBAES Edu-Excellence Schools — WAEC, NECO and computer-based testing, step by step.",
+    "How examination registration works at BOBAES Edu-Excellence Schools — State BECE, NECO BECE, WAEC, NECO and computer-based testing, step by step.",
   alternates: { canonical: "/academics/exam-registration" },
 };
 
-const EXAM_MESSAGE = `Hello ${SCHOOL.shortName}, I would like to ask about WAEC / NECO / CBT registration.`;
+const EXAM_MESSAGE = `Hello ${SCHOOL.shortName}, I would like to ask about BECE / WAEC / NECO / CBT registration.`;
 
 export default function ExamRegistrationPage() {
   return (
     <>
       <PageHero
         eyebrow="Examinations"
-        title="WAEC, NECO and CBT registration."
+        title="BECE, WAEC, NECO and CBT registration."
         lead="Registration is the point where families most often get lost. It should not be complicated, and here it is not."
         media="examsHero"
       />
@@ -68,8 +68,8 @@ export default function ExamRegistrationPage() {
 
         <DraftNote>
           These steps were drafted for the build. Confirm the real process,
-          current fees and this session&rsquo;s deadlines with the examinations
-          officer, then update <code>EXAM_STEPS</code> in{" "}
+          current fees and this session&rsquo;s deadlines with the school
+          office, then update <code>EXAM_STEPS</code> in{" "}
           <code>content/academics.ts</code>.
         </DraftNote>
 
@@ -104,7 +104,7 @@ export default function ExamRegistrationPage() {
 
       <CtaBand
         title="Not yet a BOBAES student?"
-        lead="Our secondary school takes candidates from JSS 1 through to SS 3. Talk to us about a place."
+        lead="Our secondary section admits pupils into JSS 1 through JSS 3. Talk to us about a place."
       />
     </>
   );

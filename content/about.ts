@@ -74,7 +74,7 @@ export const PHILOSOPHY = {
   opening:
     "The greatest gift we can give children during the formative years is a driving curiosity, a belief in their abilities, a thirst for knowledge and a passion to grow.",
   body: [
-    "Bobaes Edu-Excellence Schools offer an educational experience for children of all ages, from Nursery through to the end of the Senior Secondary Certificate Examinations.",
+    "Bobaes Edu-Excellence Schools offers Nursery, Primary and Junior Secondary education from JSS 1 to JSS 3.",
     "Our teaching philosophy is based on our commitment to teach pupils and students through metacognition, and to recognise the importance of brain science to teaching and learning.",
     "Embedded in this philosophy are the principles of multiple intelligences (Howard Gardner, 1983), which facilitate and inspire learning for all young people. Through our inquiry-based approach, pupils and students develop a natural curiosity for learning and for the world outside the classroom.",
     "We believe that our philosophy of education instils a love for learning, challenges children to develop their own minds and unique personalities, and allows us to truly know our learners and guide us in addressing their individual needs.",
@@ -83,9 +83,9 @@ export const PHILOSOPHY = {
 
 /** E-learning — verbatim in substance from E-Learning_Software.docx. */
 export const ELEARNING = {
-  title: "E-Learning and the Brainfield curriculum",
+  title: "E-Learning and the ULESSON curriculum",
   body: [
-    "Bobaes Edu-Excellence Schools strive to ensure pupils and students learn with the use of digital curriculum and collaboration tools such as the Brainfield software.",
+    "Bobaes Edu-Excellence Schools strive to ensure pupils and students learn with the use of digital curriculum and collaboration tools such as the ULESSON software.",
     "The changing landscape of the world's information to digital form requires today's pupils and students to have a different set of skills than what was required just a decade ago. We equip our children not just with the three R's, but also with the 21st century skills of problem-solving, critical thinking, communication and technological literacy.",
     "We want children to develop the skills and knowledge necessary to responsibly navigate the emerging modern world. This is done by incorporating the use of technological devices with traditional classroom studies. The use of technology increases retention rates because children are excited about their discoveries and are actively engaged in their lessons in a way they could not be without the technological devices.",
   ],
@@ -104,22 +104,22 @@ export const FACILITIES = [
   },
   {
     name: "Computer Laboratory",
-    body: "Where the Brainfield digital curriculum lives. Pupils work on real devices from the primary years upward, building technological literacy alongside the three R's.",
+    body: "Where the ULESSON digital curriculum lives. Pupils work on real devices from the primary years upward, building technological literacy alongside the three R's.",
     mediaKey: "facilityComputerLab",
     draft: true,
   },
-  {
-    name: "Science Laboratory",
-    body: "A laboratory for practical work in the sciences, where students carry out and record experiments for themselves.",
-    mediaKey: "facilityScienceLab",
-    draft: true,
-  },
-  {
-    name: "Home Economics Room",
-    body: "A dedicated room with long worktables for home economics lessons, where pupils learn practical skills hands-on.",
-    mediaKey: "facilityHomeEconomics",
-    draft: true,
-  },
+//   {
+//     name: "Science Laboratory",
+//     body: "A laboratory for practical work in the sciences, where students carry out and record experiments for themselves.",
+//     mediaKey: "facilityScienceLab",
+//     draft: true,
+//   },
+//   {
+//     name: "Home Economics Room",
+//     body: "A dedicated room with long worktables for home economics lessons, where pupils learn practical skills hands-on.",
+//     mediaKey: "facilityHomeEconomics",
+//     draft: true,
+//   },
   {
     name: "Library",
     body: "A quiet reading room stocked for every level, from picture books for the creche to reference texts for WAEC and NECO candidates.",
@@ -132,10 +132,10 @@ export const FACILITIES = [
     mediaKey: "facilityPlayground",
     draft: true,
   },
-  {
-    name: "Safety and Security",
-    body: "A secured, gated campus with controlled access, supervised drop-off and pick-up, and staff trained to respond in a crisis.",
-    mediaKey: "facilitySecurity",
-    draft: true,
-  },
+//   {
+//     name: "Safety and Security",
+//     body: "A secured, gated campus with controlled access, supervised drop-off and pick-up, and staff trained to respond in a crisis.",
+//     mediaKey: "facilitySecurity",
+//     draft: true,
+//   },
 ] as const;

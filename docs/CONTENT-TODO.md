@@ -1,6 +1,6 @@
 # Content to replace before launch
 
-The school supplied four Word documents. Their text is used **verbatim in
+The school supplied Word documents. Their text is used **verbatim in
 substance** wherever it covers a section, and those parts are safe.
 
 Everything listed here is **not** from the school. It was drafted during the
@@ -44,11 +44,12 @@ drafted and needs the bursar's confirmation.
 ## 🟡 Needs the school's real information
 
 ### Staff — `content/staff.ts`
-All five people are placeholders with bracketed names and prompt-style bios.
-No real staff names, photographs or biographies were supplied.
+The public roles and names have been updated from the supplied correction:
+Principal, Lead Teacher, Manager and Admin Officer.
 
-Replace the records **and** the matching portraits (see
-`docs/PHOTO-MANIFEST.md`, the `staff*` slots). Appears on `/about/staff`.
+Gloria Obinna's photograph is not currently available. Her staff card uses an
+intentional initials treatment and must not be replaced with a fake portrait.
+Appears on `/about/staff`.
 
 ### School calendar — `content/calendar.ts`
 Every term date and event is invented. It follows the usual Nigerian
@@ -67,18 +68,13 @@ Appears on each `/academics/<level>` page.
 
 ### Examination registration steps — `content/academics.ts` (`EXAM_STEPS`)
 The four registration steps are drafted. Confirm the real process, current
-fees and this session's deadlines with the examinations officer.
+fees and this session's deadlines with the school office.
 Appears on `/academics/exam-registration`.
 
 ### Facilities — `content/about.ts` (`FACILITIES`)
-The seven facility descriptions are drafted. Confirm each one describes the
-real campus. The Science Laboratory and Home Economics Room entries were
-added because the school's photographs show them (9.jpg, 13.jpg). Appears on `/about/facilities`.
-
-### How to apply — `app/admissions/how-to-apply/page.tsx`
-The six-step process and the "what to bring" list are drafted. Confirm the
-real steps, entrance assessment arrangements and required documents with the
-school office. (This copy is inline in the page rather than in `content/`.)
+The visible facility descriptions are drafted. Confirm each one describes the
+real campus. The Science Laboratory and Home Economics Room entries are hidden
+until the school supplies the requested photographs. Appears on `/about/facilities`.
 
 ---
 
@@ -89,13 +85,12 @@ In `content/school.ts`:
 | Field | Current value | Status |
 |---|---|---|
 | Name, motto, address | from `BOBAES_Profile.docx` | ✅ real |
-| Phone | `09024959076` | ✅ real (from the profile document) |
+| Phone | `08086614277` | ✅ real (from the admission policy document) |
 | Email | `bobaeseduexcellence@gmail.com` | ⚠️ read from the school's pull-up banner (`public/bobaes-img/14.jpg`) — confirm it is monitored |
 | Facebook | `https://www.facebook.com/` | ⚠️ **placeholder** — needs the real page URL | (the footer hides the link while it is the placeholder)
 
-Also visible on that banner but **not used** until confirmed: a website,
-`bobaeseduexcellence.org`, and a second phone number that is partly hidden
-(`…5614277`).
+The supplied current website is `http://bobaeseduexcellenceschools.org/`, used
+as the default canonical URL when `NEXT_PUBLIC_SITE_URL` is not set.
 
 The phone number is also used for the WhatsApp links. If the school uses a
 **different** number for WhatsApp than for calls, split them in

@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Admissions",
   description:
-    "Enquire about a place at BOBAES Edu-Excellence Schools, Port Harcourt. Send us a message, call, or book a tour — admissions are open for the 2026/2027 session.",
+    "Enquire about a place at BOBAES Edu-Excellence Schools, Port Harcourt. Admissions are ongoing — send us a message, call, or book a tour.",
   alternates: { canonical: "/admissions" },
 };
 
@@ -21,8 +21,8 @@ export default function AdmissionsPage() {
     <>
       <PageHero
         eyebrow="Admissions"
-        title="Let's talk about your child."
-        lead="Leave your number and someone from the school will call you back. No form-filling marathon, no waiting for a portal."
+        title="Admissions are ongoing."
+        lead="BOBAES admits pupils and students on merit, without discrimination. Beginners are welcomed into the right class, while other incoming pupils and students sit a placement test."
         media="admissionsHero"
       />
 
@@ -111,6 +111,41 @@ export default function AdmissionsPage() {
       </section>
 
       <Section tone="sand">
+        <SectionHeading
+          eyebrow="Admission policy"
+          title="Fair placement into the right class"
+          lead="The primary section admits children aged 2 to 10 into Pre-Nursery through Grade 5. The secondary section admits children aged 10 to 14 into JSS 1 through JSS 3."
+        />
+
+        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+          {[
+            {
+              title: "Merit-based admission",
+              body: "Admission is based on merit and is open to all pupils and students without discrimination of any type.",
+            },
+            {
+              title: "Placement tests",
+              body: "New intakes sit a written class-placement test Monday to Friday between 8:00am and 4:00pm. Pre-Nursery pupils are exempt.",
+            },
+            {
+              title: "School week",
+              body: "School activities run Monday to Friday, except on public holidays.",
+            },
+          ].map((item) => (
+            <article
+              key={item.title}
+              className="rounded-md border-2 border-navy/12 bg-white p-6"
+            >
+              <h2 className="t-h3 text-navy">{item.title}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                {item.body}
+              </p>
+            </article>
+          ))}
+        </div>
+      </Section>
+
+      <Section tone="paper">
         <SectionHeading
           eyebrow="Next steps"
           title="Everything else you will want to know"

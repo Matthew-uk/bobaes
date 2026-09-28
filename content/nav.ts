@@ -32,6 +32,11 @@ export const NAV: NavItem[] = [
         href: "/about/staff",
         description: "The people who will teach your child",
       },
+      {
+        label: "Photos",
+        href: "/photos",
+        description: "Classrooms, school life, events and activities",
+      },
     ],
   },
   {
@@ -61,10 +66,10 @@ export const NAV: NavItem[] = [
       {
         label: "Secondary",
         href: "/academics/secondary",
-        description: "11 – 17 years",
+        description: "10 – 14 years",
       },
       {
-        label: "WAEC / NECO / CBT Registration",
+        label: "BECE / WAEC / NECO Registration",
         href: "/academics/exam-registration",
         description: "How examination registration works",
       },
@@ -92,7 +97,7 @@ export const NAV: NavItem[] = [
       {
         label: "School Calendar",
         href: "/admissions/calendar",
-        description: "Term dates for the 2026/2027 session",
+        description: "Term dates and BECE timing",
       },
       {
         label: "Book a Tour",

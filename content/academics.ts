@@ -7,6 +7,8 @@
  * the build and must be reviewed by the school. See docs/CONTENT-TODO.md.
  */
 
+import type { MediaKey } from "@/content/media";
+
 export type LevelSlug =
   | "creche"
   | "pre-nursery"
@@ -24,7 +26,7 @@ export type Level = {
   /** "A day in the life" — time-of-day rhythm rather than a subject list. */
   day: { time: string; what: string }[];
   focus: { title: string; body: string }[];
-  mediaKey: string;
+  mediaKey: MediaKey | null;
   draft: boolean;
 };
 
@@ -48,7 +50,7 @@ export const LEVELS: Level[] = [
       { title: "Sensory development", body: "Safe, clean materials chosen to stimulate touch, sight and sound." },
       { title: "Daily communication", body: "You never collect your child wondering how the day actually went." },
     ],
-    mediaKey: "levelCreche",
+    mediaKey: null,
     draft: true,
   },
   {
@@ -70,7 +72,7 @@ export const LEVELS: Level[] = [
       { title: "Independence", body: "Early self-help skills — hands, cups, shoes, tidying up." },
       { title: "Playing alongside others", body: "The first real practice at being part of a group." },
     ],
-    mediaKey: "levelPreNursery",
+    mediaKey: null,
     draft: true,
   },
   {
@@ -94,7 +96,7 @@ export const LEVELS: Level[] = [
       { title: "Inquiry", body: "Questions are the lesson. Children are taught to wonder aloud and test their ideas." },
       { title: "Christian foundation", body: "Bible stories and character talk woven into the week, warmly and age-appropriately." },
     ],
-    mediaKey: "levelNursery",
+    mediaKey: null,
     draft: true,
   },
   {
@@ -103,31 +105,31 @@ export const LEVELS: Level[] = [
     ages: "6 – 11 years",
     teaser: "Strong fundamentals, real digital literacy.",
     intro:
-      "Our primary school covers the full Nigerian curriculum, taught through the principles of multiple intelligences — because the child who cannot sit still is not the child who cannot learn. This is also where the Brainfield digital curriculum enters properly.",
+      "Our primary school covers the full Nigerian curriculum, taught through the principles of multiple intelligences — because the child who cannot sit still is not the child who cannot learn. This is also where the ULESSON digital curriculum enters properly.",
     day: [
       { time: "Assembly", what: "The whole school together — notices, song and a short devotion." },
       { time: "Core lessons", what: "English, Mathematics and Basic Science in the sharpest part of the morning." },
       { time: "Break", what: "Snack and supervised play." },
-      { time: "Computer lab", what: "Brainfield e-learning and practical technological literacy." },
+      { time: "Computer lab", what: "ULESSON e-learning and practical technological literacy." },
       { time: "Afternoon", what: "Social studies, creative arts, civic education and physical education." },
       { time: "Close", what: "Homework set, bags checked, supervised dismissal." },
     ],
     focus: [
       { title: "Mastery of the basics", body: "Reading fluency, written English and mathematical confidence come first." },
       { title: "Metacognition", body: "Children are taught how they learn, not only what to learn — how to plan, check and correct their own work." },
-      { title: "Digital literacy", body: "Regular, structured computer lab time with the Brainfield curriculum." },
+      { title: "Digital literacy", body: "Regular, structured computer lab time with the ULESSON curriculum." },
       { title: "Independent learning", body: "Responsibility is released gradually, so children arrive in secondary able to work alone." },
     ],
-    mediaKey: "levelPrimary",
+    mediaKey: null,
     draft: true,
   },
   {
     slug: "secondary",
     name: "Secondary",
-    ages: "11 – 17 years",
-    teaser: "From JSS 1 through to WAEC, NECO and beyond.",
+    ages: "10 – 14 years",
+    teaser: "JSS 1 through JSS 3, with focused examination preparation.",
     intro:
-      "Our secondary school runs from JSS 1 to SS 3, ending with the Senior Secondary Certificate Examinations. The academic demand is real, and so is the support — small classes, teachers who notice, and a registration process for WAEC, NECO and CBT that we walk families through.",
+      "Our secondary section offers JSS 1 through JSS 3. The academic demand is real, and so is the support — teachers who notice, focused preparation and a clear placement process for new students.",
     day: [
       { time: "Assembly", what: "Devotion, notices and the day's expectations." },
       { time: "Morning periods", what: "Core subjects — English, Mathematics, the sciences and languages." },
@@ -137,12 +139,12 @@ export const LEVELS: Level[] = [
       { time: "Close", what: "Dismissal, with extra coaching for examination classes." },
     ],
     focus: [
-      { title: "Examination readiness", body: "Structured preparation for WAEC, NECO and CBT-based examinations, with registration handled through the school." },
+      { title: "Examination readiness", body: "Structured preparation for State BECE and NECO BECE, with the school guiding families through the process." },
       { title: "Subject depth", body: "Science, commercial and arts streams taught by subject specialists." },
       { title: "Critical thinking", body: "Students are pushed to argue, justify and defend a position — not to memorise one." },
       { title: "Character and direction", body: "Mentoring on conduct, faith and what comes after school." },
     ],
-    mediaKey: "levelSecondary",
+    mediaKey: null,
     draft: true,
   },
 ];
@@ -178,16 +180,22 @@ export const ENQUIRY_LEVEL_VALUES = [
 
 export const EXAM_BODIES = [
   {
+    id: "state-bece-neco-bece",
+    name: "State BECE / NECO BECE",
+    fullName: "Basic Education Certificate Examination",
+    body: "Basic Education Certificate Examinations taken at the end of the junior secondary stage. The school will confirm the current registration arrangements and dates.",
+  },
+  {
     id: "waec",
     name: "WAEC",
     fullName: "West African Examinations Council",
-    body: "The West African Senior School Certificate Examination, sat in SS 3. Registration is handled through the school as an approved centre.",
+    body: "External examination guidance where applicable. The school office will confirm the current registration arrangements before families make plans.",
   },
   {
     id: "neco",
     name: "NECO",
     fullName: "National Examinations Council",
-    body: "The Senior School Certificate Examination administered by NECO, sat alongside or in place of WAEC depending on the candidate's plans.",
+    body: "External examination guidance where applicable. Families should confirm the current route, requirements and timing with the school office.",
   },
   {
     id: "cbt",
@@ -199,11 +207,11 @@ export const EXAM_BODIES = [
 
 /**
  * ⚠️ DRAFT — the exact registration steps and deadlines were not supplied.
- * Confirm with the school's examinations officer before launch.
+ * Confirm with the school office before launch.
  */
 export const EXAM_STEPS = [
   {
-    title: "Speak to the examinations officer",
+    title: "Speak to the school office",
     body: "Call or message the school to confirm which examination your child is registering for and the current deadline.",
     draft: true,
   },

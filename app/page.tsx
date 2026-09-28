@@ -10,20 +10,27 @@ import { EXAM_BODIES, LEVELS } from "@/content/academics";
 import { TESTIMONIALS } from "@/content/testimonials";
 import type { MediaKey } from "@/content/media";
 
+const WELCOME_COPY = [
+  `${SCHOOL.name}, Port Harcourt, Rivers State, Nigeria is a co-educational day Nursery, Primary and Junior Secondary school. It is open to all, irrespective of religion, ethnicity, nationality or race.`,
+  "We provide a well-rounded education in terms of conscience, competence, compassion and commitment. At graduation, we expect our students to be open to growth, intellectually competent, loving, religious and committed to promoting justice.",
+  "We admit pupils into Nursery, Primary and JSS 1 to JSS 3 classes. Prospective students into JSS 1 take an entrance examination at a date communicated to candidates, with English Language and Mathematics based on the NERDC curriculum for Basic 4-6.",
+  "If what you want for your child is a world-class education, then you are right to consider BOBAES Edu-Excellence Schools.",
+];
+
 /** Short facts, each taken from the school's own documents. */
 const FACTS = [
-  { term: "Creche to SS 3", detail: "Early years through to the Senior Secondary Certificate Examinations" },
+  { term: "Nursery to JSS 3", detail: "Nursery, Primary and junior secondary education" },
   { term: "Christ-centred", detail: "Colossians 1:15–18 at the heart of the school" },
-  { term: "Brainfield e-learning", detail: "Digital curriculum alongside classroom teaching" },
-  { term: "Faith Avenue", detail: "Off Cornerstone Road, Port Harcourt" },
+  { term: "ULESSON e-learning", detail: "Digital curriculum alongside classroom teaching" },
+  { term: "Admissions ongoing", detail: "Placement tests Monday to Friday, 8:00am to 4:00pm" },
 ];
 
 const LIFE: { media: MediaKey; caption: string }[] = [
-  { media: "lifeDance", caption: "Cultural dance performance" },
-  { media: "lifeScience", caption: "Science practical" },
-  { media: "lifeChoir", caption: "Singing at a school event" },
-  { media: "lifeHomeEconomics", caption: "Home economics" },
-  { media: "lifeExcursion", caption: "Class excursion" },
+  { media: "lifeDance", caption: "Outdoor sports" },
+  { media: "lifeScience", caption: "Library study" },
+  { media: "lifeChoir", caption: "Early-years classroom" },
+  { media: "lifeHomeEconomics", caption: "Computer laboratory" },
+  { media: "lifeExcursion", caption: "Playground activity" },
 ];
 
 export default function HomePage() {
@@ -34,7 +41,7 @@ export default function HomePage() {
         <div className="wrap grid gap-10 pt-10 pb-14 sm:pt-14 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)] lg:items-center lg:gap-14 lg:pt-16 lg:pb-20">
           <div>
             <Eyebrow>
-              Creche to Secondary
+              Nursery to JSS 3
               <span className="hidden sm:inline"> · Port Harcourt</span>
             </Eyebrow>
             <h1 className="t-display text-navy">
@@ -77,7 +84,7 @@ export default function HomePage() {
               />
             </div>
             <figcaption className="mt-3 text-xs text-ink-soft">
-              Pupils performing at a school celebration.
+              Pupils working at their desks in a BOBAES classroom.
             </figcaption>
           </figure>
         </div>
@@ -95,6 +102,24 @@ export default function HomePage() {
             </div>
           ))}
         </dl>
+      </section>
+
+      <section className="bg-paper py-16 sm:py-20 lg:py-24">
+        <div className="wrap grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Welcome"
+              title="A foundation for lifelong learning and global citizenship"
+            />
+          </Reveal>
+          <Reveal delay={80}>
+            <div className="space-y-5 text-ink-soft">
+              {WELCOME_COPY.map((paragraph) => (
+                <p key={paragraph.slice(0, 60)}>{paragraph}</p>
+              ))}
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* ---------------------------- Pillars ----------------------------- */}
@@ -155,14 +180,13 @@ export default function HomePage() {
             </Reveal>
 
             <Reveal delay={80}>
-              <Eyebrow>From 3 months to 17 years</Eyebrow>
+              <Eyebrow>From 3 months to JSS 3</Eyebrow>
               <h2 className="t-h2 text-navy">
                 One school, the whole way through.
               </h2>
               <p className="t-lead mt-5">
-                From the creche to SS 3 and the Senior Secondary Certificate
-                Examinations, under one set of values. Choose the stage your
-                child is at:
+                From the early years through JSS 3, under one set of values.
+                Choose the stage your child is at:
               </p>
 
               <ul className="mt-8 divide-y divide-navy/12 border-y border-navy/12">
@@ -221,7 +245,7 @@ export default function HomePage() {
         <div className="wrap">
           <SectionHeading
             eyebrow="Life at BOBAES"
-            title="Performances, practicals and days out"
+            title="Classrooms, computers, sports and play"
           />
 
           <ul className="-mx-5 mt-10 flex snap-x snap-mandatory scroll-px-5 gap-3 overflow-x-auto px-5 pb-2 md:-mx-10 md:scroll-px-10 md:px-10 lg:mx-0 lg:grid lg:grid-cols-4 lg:grid-rows-[repeat(2,14rem)] lg:overflow-visible lg:px-0 lg:pb-0 xl:grid-rows-[repeat(2,16rem)]">
@@ -249,6 +273,11 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+          <div className="mt-8">
+            <ButtonLink href="/photos" variant="outline">
+              View more photos
+            </ButtonLink>
+          </div>
         </div>
       </section>
 
@@ -268,12 +297,12 @@ export default function HomePage() {
           <Reveal delay={80}>
             <Eyebrow tone="light">Examinations</Eyebrow>
             <h2 className="t-h2 text-white">
-              Through to WAEC, NECO and CBT.
+              BECE, WAEC, NECO and CBT guidance.
             </h2>
             <p className="t-lead mt-5 text-white/80">
-              Our secondary school takes candidates to the end of the Senior
-              Secondary Certificate Examinations, and walks families through
-              registration.
+              Our school guides families through State BECE, NECO BECE and
+              other relevant examination registration so deadlines and details
+              are clear.
             </p>
 
             <dl className="mt-8 divide-y divide-white/15 border-y border-white/15">

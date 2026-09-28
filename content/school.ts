@@ -4,7 +4,7 @@
  * never hard-code a phone number or address in JSX.
  */
 
-const RAW_PHONE = "09024959076";
+const RAW_PHONE = "08086614277";
 
 /** 0902… -> +234902… for tel: and wa.me links. */
 function toInternational(local: string): string {
@@ -24,7 +24,7 @@ export const SCHOOL = {
   tagline: "Exclusive education based on Nigerian and International standards.",
 
   address: {
-    street: "20, Faith Avenue, off Cornerstone Road",
+    street: "24, Faith Avenue, off Cornerstone Road",
     city: "Port Harcourt",
     state: "Rivers State",
     country: "Nigeria",

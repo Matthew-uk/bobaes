@@ -28,7 +28,7 @@ export default function Logo({ tone = "dark", size = "md", className = "" }: Pro
         className={size === "lg" ? "h-16 w-auto" : "h-11 w-auto sm:h-12"}
       />
 
-      <span className="flex flex-col leading-none">
+      <span className={`flex flex-col leading-none ${size === "md" ? "logo-wordmark" : ""}`}>
         <span
           className={`font-display font-semibold tracking-tight ${
             size === "lg" ? "text-xl" : "text-[1.05rem] sm:text-lg"

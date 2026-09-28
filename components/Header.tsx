@@ -231,7 +231,7 @@ export default function Header() {
               on small screens rather than the button disappearing. */}
           <Link
             href="/admissions"
-            className="inline-flex shrink-0 rounded-md bg-red px-4 py-2.5 text-sm font-bold text-white transition-colors duration-200 hover:bg-red-deep sm:px-5"
+            className="hidden shrink-0 rounded-md bg-red px-4 py-2.5 text-sm font-bold text-white transition-colors duration-200 hover:bg-red-deep min-[521px]:inline-flex sm:px-5"
           >
             Apply<span className="hidden sm:inline">&nbsp;Now</span>
           </Link>

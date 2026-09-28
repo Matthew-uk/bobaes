@@ -37,7 +37,7 @@ export const FEE_ROWS: FeeRow[] = [
 
 export const FEE_INCLUDES = [
   "Tuition for the full term",
-  "Access to the computer laboratory and the Brainfield e-learning curriculum",
+  "Access to the computer laboratory and the ULESSON e-learning curriculum",
   "Library access",
   "Termly assessment and reporting",
   "Parent–teacher meetings",

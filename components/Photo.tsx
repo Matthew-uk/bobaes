@@ -48,6 +48,7 @@ export default function Photo({
         {...shared}
         alt={resolvedAlt}
         fill
+        unoptimized
         sizes={sizes ?? "100vw"}
         style={{ objectFit: "cover", objectPosition: entry.position }}
       />
@@ -58,6 +59,7 @@ export default function Photo({
     <Image
       {...shared}
       alt={resolvedAlt}
+      unoptimized
       width={entry.width}
       height={entry.height}
       sizes={sizes}

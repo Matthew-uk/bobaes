@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { ALL_ROUTES } from "@/content/nav";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://bobaesschools.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "http://bobaeseduexcellenceschools.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

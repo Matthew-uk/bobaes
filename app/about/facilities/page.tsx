@@ -4,6 +4,7 @@ import Photo from "@/components/Photo";
 import Reveal from "@/components/Reveal";
 import { ButtonLink, DraftNote, PageHero, Section } from "@/components/ui";
 import { ELEARNING, FACILITIES } from "@/content/about";
+import type { MediaKey } from "@/content/media";
 
 export const metadata: Metadata = {
   title: "Facilities",
@@ -35,17 +36,19 @@ export default function FacilitiesPage() {
                       : "lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"
                   }`}
                 >
-                  <div className={reverse ? "lg:order-2" : ""}>
-                    <div className="relative aspect-4/3 w-full overflow-hidden rounded-md">
-                      <Photo
-                        media={facility.mediaKey}
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 55vw"
-                      />
+                  {facility.mediaKey ? (
+                    <div className={reverse ? "lg:order-2" : ""}>
+                      <div className="relative aspect-4/3 w-full overflow-hidden rounded-md">
+                        <Photo
+                        media={facility.mediaKey as MediaKey}
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 55vw"
+                        />
+                      </div>
                     </div>
-                  </div>
+                  ) : null}
 
-                  <div className={reverse ? "lg:order-1" : ""}>
+                  <div className={`${reverse ? "lg:order-1" : ""} ${facility.mediaKey ? "" : "lg:col-span-2 lg:max-w-2xl"}`}>
                     <span className="t-eyebrow text-red">
                       {String(i + 1).padStart(2, "0")}
                     </span>

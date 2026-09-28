@@ -38,9 +38,9 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: "t3",
     quote:
-      "The school walked us through the WAEC registration step by step. As a first-time parent at that stage, that mattered more than I expected.",
+      "The school walked us through examination registration step by step. As a first-time parent at that stage, that mattered more than I expected.",
     attribution: "[Parent name to be supplied]",
-    detail: "[Parent of an SS 3 student]",
+    detail: "[Parent of a secondary student]",
     draft: true,
   },
 ];

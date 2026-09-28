@@ -18,16 +18,17 @@ const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://bobaesschools.com";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "http://bobaeseduexcellenceschools.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: `%s | ${SCHOOL.name}`,
-    default: `${SCHOOL.name} — Creche to Secondary in Port Harcourt`,
+    default: `${SCHOOL.name} — Nursery, Primary and JSS in Port Harcourt`,
   },
   description:
-    "A Christian-founded private school in Port Harcourt offering Creche, Pre-Nursery, Nursery, Primary and Secondary education. Connecting Goodness, Integrity and Knowledge.",
+    "A Christian-founded private school in Port Harcourt offering Nursery, Primary and JSS 1 to JSS 3 education. Connecting Goodness, Integrity and Knowledge.",
   applicationName: SCHOOL.name,
   keywords: [
     "school in Port Harcourt",
@@ -35,7 +36,8 @@ export const metadata: Metadata = {
     "Christian school Nigeria",
     "creche Port Harcourt",
     "nursery and primary school",
-    "secondary school WAEC NECO",
+    "junior secondary school Port Harcourt",
+    "State BECE NECO BECE",
     SCHOOL.name,
   ],
   alternates: { canonical: "/" },
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
     siteName: SCHOOL.name,
     locale: "en_NG",
     url: "/",
-    title: `${SCHOOL.name} — Creche to Secondary in Port Harcourt`,
+    title: `${SCHOOL.name} — Nursery, Primary and JSS in Port Harcourt`,
     description:
       "Exclusive education based on Nigerian and International standards. Connecting Goodness, Integrity and Knowledge.",
   },
@@ -62,7 +64,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`${fraunces.variable} ${nunitoSans.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col overflow-x-hidden">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-100 focus:rounded-full focus:bg-navy focus:px-5 focus:py-3 focus:text-sm focus:font-bold focus:text-white"
