@@ -154,7 +154,7 @@ export const MEDIA = {
     placeholder: false,
   },
   facilityScienceLab: {
-    src: `${P}/facility-classroom.svg`,
+    src: `${R}/lab.png`,
     alt: "The science laboratory at BOBAES Edu-Excellence Schools",
     width: 1400,
     height: 1050,
@@ -170,7 +170,7 @@ export const MEDIA = {
     placeholder: true,
   },
   facilityComputerLab: {
-    src: `${R}/9.png`,
+    src: `${R}/computer.jpeg`,
     alt: "The computer laboratory at BOBAES Edu-Excellence Schools",
     width: 3024,
     height: 4032,
@@ -179,7 +179,7 @@ export const MEDIA = {
     placeholder: false,
   },
   facilityLaboratory: {
-    src: `${P}/facility-classroom.svg`,
+    src: `${R}/lab.png`,
     alt: "The science laboratory at BOBAES Edu-Excellence Schools",
     width: 1400,
     height: 1050,
@@ -279,7 +279,7 @@ export const MEDIA = {
     placeholder: false,
   },
   staffSecondary: {
-    src: `${R}/21.png`,
+    src: `${R}/manager.png`,
     alt: "Mr Christopher Chilekwe Nnamdi seated at his desk",
     width: 4032,
     height: 3024,
@@ -288,11 +288,12 @@ export const MEDIA = {
     placeholder: false,
   },
   staffEarlyYears: {
-    src: `${P}/staff-4.svg`,
+    src: `${R}/admin.jpg`,
     alt: "",
     width: 800,
     height: 1000,
     note: "No photograph currently available for Gloria Obinna. Use an intentional no-photo treatment; do not substitute a fake portrait.",
+    position: "90% 15%",
     placeholder: true,
   },
   staffExams: {
@@ -424,6 +425,16 @@ export const MEDIA = {
     note: "Gallery: practical learning.",
     placeholder: false,
   },
+  waecExam: {
+    src: `${R}/waec.jpg`,
+    alt: "BOBAES pupils carrying out a science practical",
+    width: 780,
+    height: 1040,
+    position: "50% 40%",
+    note: "Gallery: practical learning.",
+    placeholder: false,
+  },
+//   waec.jpg
 } as const satisfies Record<string, MediaEntry>;
 
 export type MediaKey = keyof typeof MEDIA;

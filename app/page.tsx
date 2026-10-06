@@ -326,7 +326,7 @@ export default function HomePage() {
       </section>
 
       {/* ------------------------- Testimonials --------------------------- */}
-      <section className="bg-sand py-16 sm:py-20 lg:py-24">
+      {/* <section className="bg-sand py-16 sm:py-20 lg:py-24">
         <div className="wrap">
           <SectionHeading eyebrow="From our parents" title="What families tell us" />
 
@@ -354,7 +354,7 @@ export default function HomePage() {
             <code>content/testimonials.ts</code>.
           </DraftNote>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------------------------- CTA --------------------------------- */}
       <CtaBand

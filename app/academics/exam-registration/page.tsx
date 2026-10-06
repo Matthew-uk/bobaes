@@ -28,7 +28,7 @@ export default function ExamRegistrationPage() {
         eyebrow="Examinations"
         title="BECE, WAEC, NECO and CBT registration."
         lead="Registration is the point where families most often get lost. It should not be complicated, and here it is not."
-        media="examsHero"
+        media="waecExam"
       />
 
       <Section tone="paper">

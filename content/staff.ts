@@ -38,6 +38,6 @@ export const STAFF: StaffMember[] = [
     role: "Admin Officer",
     bio: "Welcomes families, supports school records and helps enquiries reach the right office quickly.",
     mediaKey: "staffEarlyYears",
-    photoAvailable: false,
+    photoAvailable: true,
   },
 ];

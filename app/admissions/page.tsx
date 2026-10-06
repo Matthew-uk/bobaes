@@ -23,7 +23,7 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         title="Admissions are ongoing."
         lead="BOBAES admits pupils and students on merit, without discrimination. Beginners are welcomed into the right class, while other incoming pupils and students sit a placement test."
-        media="admissionsHero"
+        media="staffEarlyYears"
       />
 
       <section className="bg-paper py-16 sm:py-20 lg:py-24">

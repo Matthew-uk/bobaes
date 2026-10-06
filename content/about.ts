@@ -108,12 +108,12 @@ export const FACILITIES = [
     mediaKey: "facilityComputerLab",
     draft: true,
   },
-//   {
-//     name: "Science Laboratory",
-//     body: "A laboratory for practical work in the sciences, where students carry out and record experiments for themselves.",
-//     mediaKey: "facilityScienceLab",
-//     draft: true,
-//   },
+  {
+    name: "Science Laboratory",
+    body: "A laboratory for practical work in the sciences, where students carry out and record experiments for themselves.",
+    mediaKey: "facilityScienceLab",
+    draft: true,
+  },
 //   {
 //     name: "Home Economics Room",
 //     body: "A dedicated room with long worktables for home economics lessons, where pupils learn practical skills hands-on.",
