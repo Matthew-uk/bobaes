@@ -5,8 +5,8 @@
  */
 
 export const WELCOME = {
-  heading: "Welcome to BOBAES Edu-Excellence Schools",
-  body: "Exclusive education based on Nigerian and International standards.",
+  heading: "Welcome to BOBAES EDU-EXCELLENCE SCHOOLS",
+  body: "A Government Approved School in Port Harcourt, Rivers State, Nigeria.",
 } as const;
 
 export const GOAL =
@@ -74,7 +74,7 @@ export const PHILOSOPHY = {
   opening:
     "The greatest gift we can give children during the formative years is a driving curiosity, a belief in their abilities, a thirst for knowledge and a passion to grow.",
   body: [
-    "Bobaes Edu-Excellence Schools offers Nursery, Primary and Junior Secondary education from JSS 1 to JSS 3.",
+    "BOBAES EDU-EXCELLENCE SCHOOLS admits pupils into Nursery, Primary and Secondary classes, including JSS 1 – JSS 3 (Basic 7 – Basic 9) and SS 1 – SS 3 (Basic 10 - Basic 12).",
     "Our teaching philosophy is based on our commitment to teach pupils and students through metacognition, and to recognise the importance of brain science to teaching and learning.",
     "Embedded in this philosophy are the principles of multiple intelligences (Howard Gardner, 1983), which facilitate and inspire learning for all young people. Through our inquiry-based approach, pupils and students develop a natural curiosity for learning and for the world outside the classroom.",
     "We believe that our philosophy of education instils a love for learning, challenges children to develop their own minds and unique personalities, and allows us to truly know our learners and guide us in addressing their individual needs.",

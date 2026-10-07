@@ -11,15 +11,15 @@ import { TESTIMONIALS } from "@/content/testimonials";
 import type { MediaKey } from "@/content/media";
 
 const WELCOME_COPY = [
-  `${SCHOOL.name}, Port Harcourt, Rivers State, Nigeria is a co-educational day Nursery, Primary and Junior Secondary school. It is open to all, irrespective of religion, ethnicity, nationality or race.`,
-  "We provide a well-rounded education in terms of conscience, competence, compassion and commitment. At graduation, we expect our students to be open to growth, intellectually competent, loving, religious and committed to promoting justice.",
-  "We admit pupils into Nursery, Primary and JSS 1 to JSS 3 classes. Prospective students into JSS 1 take an entrance examination at a date communicated to candidates, with English Language and Mathematics based on the NERDC curriculum for Basic 4-6.",
-  "If what you want for your child is a world-class education, then you are right to consider BOBAES Edu-Excellence Schools.",
+  "A Government Approved School in Port Harcourt, Rivers State, Nigeria.",
+  "BOBAES EDU-EXCELLENCE SCHOOLS is a co-educational day Nursery, Primary and Secondary School. It is open to all, irrespective of religion, ethnicity, nationality or race. Our vision and mission are based on building a strong foundation for lifelong learning and nurturing children to become responsible global citizens.",
+  "BOBAES EDU-EXCELLENCE SCHOOLS provides a well-rounded education, notably in terms of Conscience, Competence, Compassion and Commitment. At graduation, we expect our students to be open to growth, intellectually competent, loving, religious and committed to promoting justice.",
+  "We admit pupils into Nursery, Primary and Secondary classes, including JSS 1 – JSS 3 (Basic 7 – Basic 9) and SS 1 – SS 3 (Basic 10 - Basic 12).",
 ];
 
 /** Short facts, each taken from the school's own documents. */
 const FACTS = [
-  { term: "Nursery to JSS 3", detail: "Nursery, Primary and junior secondary education" },
+  { term: "Nursery to SS3", detail: "Nursery, Primary and Secondary education" },
   { term: "Christ-centred", detail: "Colossians 1:15–18 at the heart of the school" },
   { term: "ULESSON e-learning", detail: "Digital curriculum alongside classroom teaching" },
   { term: "Admissions ongoing", detail: "Placement tests Monday to Friday, 8:00am to 4:00pm" },
@@ -41,7 +41,7 @@ export default function HomePage() {
         <div className="wrap grid gap-10 pt-10 pb-14 sm:pt-14 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)] lg:items-center lg:gap-14 lg:pt-16 lg:pb-20">
           <div>
             <Eyebrow>
-              Nursery to JSS 3
+              Nursery to SS3
               <span className="hidden sm:inline"> · Port Harcourt</span>
             </Eyebrow>
             <h1 className="t-display text-navy">
@@ -109,7 +109,7 @@ export default function HomePage() {
           <Reveal>
             <SectionHeading
               eyebrow="Welcome"
-              title="A foundation for lifelong learning and global citizenship"
+              title="Welcome to BOBAES EDU-EXCELLENCE SCHOOLS"
             />
           </Reveal>
           <Reveal delay={80}>

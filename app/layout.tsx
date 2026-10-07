@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: `%s | ${SCHOOL.name}`,
-    default: `${SCHOOL.name} — Nursery, Primary and JSS in Port Harcourt`,
+    default: `${SCHOOL.name} — Nursery, Primary and Secondary in Port Harcourt`,
   },
   description:
-    "A Christian-founded private school in Port Harcourt offering Nursery, Primary and JSS 1 to JSS 3 education. Connecting Goodness, Integrity and Knowledge.",
+    "A Government Approved School in Port Harcourt offering Nursery, Primary and Secondary education.",
   applicationName: SCHOOL.name,
   keywords: [
     "school in Port Harcourt",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     "Christian school Nigeria",
     "creche Port Harcourt",
     "nursery and primary school",
-    "junior secondary school Port Harcourt",
+    "secondary school Port Harcourt",
     "State BECE NECO BECE",
     SCHOOL.name,
   ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: SCHOOL.name,
     locale: "en_NG",
     url: "/",
-    title: `${SCHOOL.name} — Nursery, Primary and JSS in Port Harcourt`,
+    title: `${SCHOOL.name} — Nursery, Primary and Secondary in Port Harcourt`,
     description:
       "Exclusive education based on Nigerian and International standards. Connecting Goodness, Integrity and Knowledge.",
   },
